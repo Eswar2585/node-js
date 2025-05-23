@@ -1,5 +1,6 @@
 import User from "../model/userModel.js";
 
+<<<<<<< HEAD
 
 export const register = async (req,res) => {
     const {name ,email,phoneNumber,password} = req.body;
@@ -14,3 +15,9 @@ export const register = async (req,res) => {
         res.status(500).json({message:error})
     }
 }
+=======
+export const register=async(req,res)=>{
+    const {name}=req.body;
+    res.status(200).json({data: `welcome ${name}`})
+}
+>>>>>>> fdb7c14bb715fe61066a0bca96cd19a4cc13bb4f
