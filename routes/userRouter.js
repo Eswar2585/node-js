@@ -1,9 +1,24 @@
-import expresss from "express"
-const userRoute =expresss.Router();
-userRoute.post("/register",(req,res)=>
-{
-    const {name}=req.body;
-    res.status(200).json({data: `welcome ${name}`})
+import express from "express";
+import { register } from "../controller/useController.js";
+// import { regiter } from "../controler/userController.js";
 
-})
-export default userRoute;
+const userRoute = express.Router();
+
+// GET
+
+
+// POST
+
+userRoute.post("/register",register)
+
+
+// PUT
+
+
+// DELETE
+
+
+
+
+
+export default userRoute
